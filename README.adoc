@@ -1,0 +1,33 @@
+:toc:
+:toclevels: 5
+:toc-placement!:
+:source-highlighter: highlight.js
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+++++
+<img align="right" role="right" height="50"  style="float: right; height:50px; padding:2ex" src="https://raw.githubusercontent.com/WDAqua/Qanary/master/doc/logo-qanary_s.png"/>
+++++
+
+# The Qanary Ecosystem
+
+Here, is a short description of the contributions of the http://wse-research.org/[WSE group] to the Qanary ecosystem.
+It consists of several artifacts that are used to build Knowledge Base Question Answering systems.
+All are located in their own GitHub repositories.
+
+* https://github.com/WDAqua/Qanary[Qanary] is a framework for building Question Answering systems build on top of the https://projects.spring.io/spring-boot/[Spring Boot framework] and using RDF annotations to represent the knowledge about a given user's question. The basic functionality of the Qanary is to provide the orchestration of Qanary components.
+  * https://github.com/WDAqua/Qanary-Pipeline-Docker[Build and run the complete Qanary Question Answering Pipeline in a Docker container].
+  * Create a Java component from the https://github.com/WDAqua/Qanary/tree/master/qanary_component-archetype[Qanary Maven Archetype].
+  * Create a Python component using the https://github.com/WSE-research/qanary_helpers[Qanary Python Helper Library].
+* The https://github.com/WDAqua/Qanary-question-answering-components/[Qanary components] implement tasks that are needed to answer questions in particular domains. Typically, each component is solving one task only (e.g., Language Detection, Named Entity Recognition, Relation Detection, Expected Answer Type Classification, Query Building, Answer Candidate Filtering).
+* For establishing the data exchange between components, the https://github.com/WDAqua/QAOntology[Question Answering vocabulary (short: qa)] is used.
+* The https://github.com/WDAqua/Qanary-Chatbot-UI[Qanary Chatbot UI] is providing an easy-to-use web-based chatbot frontend that can be connected to the Qanary framework APIs.
+
+++++
+<img style="width:100%; padding:2ex" src="https://github.com/WSE-research/Qanary-ecosystem-overview/blob/382c41cef5545d27aaab8936af50981e17f77f84/qanary-ecosystem-overview.png?raw=true"/>
+++++
