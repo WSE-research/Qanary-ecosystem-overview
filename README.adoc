@@ -20,11 +20,11 @@ Here, is a short description of the contributions of the http://wse-research.org
 It consists of several artifacts that are used to build Knowledge Base Question Answering systems.
 All are located in their own GitHub repositories.
 
-* https://github.com/WDAqua/Qanary[Qanary] is a framework for building Question Answering systems build on top of the https://projects.spring.io/spring-boot/[Spring Boot framework] and using RDF annotations to represent the knowledge about a given user's question. The basic functionality of the Qanary is to provide the orchestration of Qanary components.
+* https://github.com/WDAqua/Qanary[Qanary] is a framework for building Question Answering systems built on top of the https://projects.spring.io/spring-boot/[Spring Boot framework] and using RDF annotations to represent the knowledge about a given user's question. The basic functionality of the Qanary is to provide the orchestration of Qanary components.
   * https://github.com/WDAqua/Qanary-Pipeline-Docker[Build and run the complete Qanary Question Answering Pipeline in a Docker container].
   * Create a Java component from the https://github.com/WDAqua/Qanary/tree/master/qanary_component-archetype[Qanary Maven Archetype].
   * Create a Python component using the https://github.com/WSE-research/qanary_helpers[Qanary Python Helper Library].
-* The https://github.com/WDAqua/Qanary-question-answering-components/[Qanary components] implement tasks that are needed to answer questions in particular domains. Typically, each component is solving one task only (e.g., Language Detection, Named Entity Recognition, Relation Detection, Expected Answer Type Classification, Query Building, Answer Candidate Filtering).
+* The https://github.com/WDAqua/Qanary-question-answering-components/[Qanary components] implement tasks that are needed to answer questions in particular domains. Typically, each component solves one task only (e.g., Language Detection, Named Entity Recognition, Relation Detection, Expected Answer Type Classification, Query Building, Answer Candidate Filtering).
 * For establishing the data exchange between components, the https://github.com/WDAqua/QAOntology[Question Answering vocabulary (short: qa)] is used.
 * A https://github.com/WSE-research/Qanary_minimal_Python_example[complete, ready-to-run minimal example of 3 Qanary-driven Python components] (and the corresponding orchestrator as well as the required triplestore) is prepared as a Docker compose script.
 * The https://github.com/WDAqua/Qanary-Chatbot-UI[Qanary Chatbot UI] is providing an easy-to-use web-based chatbot frontend that can be connected to the Qanary framework APIs.
